@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hybrid.tech.sqlitedbapp.MainActivity">
+
+    <include
+   android:id="@+id/app_bar"
+   layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertNames"
+            android:layout_below="@+id/app_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/saveName"
+            android:layout_marginTop="50dp"
+            android:onClick="onSaveClicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Names"
+            android:id="@+id/showButton"
+            android:layout_marginTop="20dp"
+            android:onClick="onShowClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/names"
+            android:layout_marginTop="100dp" />
+    </LinearLayout>
+
+</RelativeLayout>
